@@ -1,0 +1,7 @@
+# Konfigurasi Apache (XAMPP / hosting)
+Options -Indexes
+DirectoryIndex index.php
+
+<FilesMatch "^(config\.php|router\.php|.*\.sqlite.*|.*\.md)$">
+    Require all denied
+</FilesMatch>
